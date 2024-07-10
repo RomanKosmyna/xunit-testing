@@ -1,0 +1,14 @@
+C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\bin\Debug\net8.0\NetworkUtility.exe
+C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\bin\Debug\net8.0\NetworkUtility.deps.json
+C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\bin\Debug\net8.0\NetworkUtility.runtimeconfig.json
+C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\bin\Debug\net8.0\NetworkUtility.dll
+C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\bin\Debug\net8.0\NetworkUtility.pdb
+C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\obj\Debug\net8.0\NetworkUtility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\obj\Debug\net8.0\NetworkUtility.AssemblyInfoInputs.cache
+C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\obj\Debug\net8.0\NetworkUtility.AssemblyInfo.cs
+C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\obj\Debug\net8.0\NetworkUtility.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\obj\Debug\net8.0\NetworkUtility.dll
+C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\obj\Debug\net8.0\refint\NetworkUtility.dll
+C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\obj\Debug\net8.0\NetworkUtility.pdb
+C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\obj\Debug\net8.0\NetworkUtility.genruntimeconfig.cache
+C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\obj\Debug\net8.0\ref\NetworkUtility.dll
