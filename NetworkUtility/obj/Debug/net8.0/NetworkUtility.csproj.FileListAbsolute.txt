@@ -12,3 +12,4 @@ C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\obj\Debug\ne
 C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\obj\Debug\net8.0\NetworkUtility.pdb
 C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\obj\Debug\net8.0\NetworkUtility.genruntimeconfig.cache
 C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\obj\Debug\net8.0\ref\NetworkUtility.dll
+C:\Users\Admin\source\repos\unit-testing-using-xunit\NetworkUtility\obj\Debug\net8.0\NetworkUtility.sourcelink.json
