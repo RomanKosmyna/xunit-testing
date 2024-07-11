@@ -1,24 +1,29 @@
 ﻿using FluentAssertions;
 using FluentAssertions.Extensions;
+using NetworkUtility.DNS;
 using NetworkUtility.Ping;
 using System.Net.NetworkInformation;
+using FakeItEasy;
 
 namespace NetworkUtility.Tests.PingTests;
 
 public class NetworkServiceTests
 {
     private readonly NetworkService _pingService;
+    private readonly IDNS _dns;
 
     public NetworkServiceTests()
     {
-        _pingService = new NetworkService();
+        _dns = A.Fake<IDNS>();
+
+        _pingService = new NetworkService(_dns);
     }
 
     [Fact]
     public void NetworkService_SendPing_ReturnString()
     {
         // Arrange
-
+        A.CallTo(() => _dns.SendDNS()).Returns(true);
         // Act
         var result = _pingService.SendPing();
 
@@ -49,7 +54,7 @@ public class NetworkServiceTests
     }
 
     [Fact]
-    public void NetworkService_GetPingOptions_ReturnsObject()
+    public void NetworkService_MostRecentPings_ReturnsObject()
     {
         //Arrange
         var expected = new PingOptions()
@@ -59,11 +64,11 @@ public class NetworkServiceTests
         };
 
         //Act
-        var result = _pingService.GetPingOptions();
+        var result = _pingService.MostRecentPings();
 
         //Assert
-        result.Should().BeOfType<PingOptions>();
-        result.Should().BeEquivalentTo(expected);
-        result.Ttl.Should().Be(expected.Ttl);
+        result.Should().BeAssignableTo<IEnumerable<PingOptions>>();
+        result.Should().ContainEquivalentOf(expected);
+        result.Should().Contain(x => x.DontFragment);
     }
 }

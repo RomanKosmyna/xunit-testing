@@ -1,12 +1,24 @@
-﻿using System.Net.NetworkInformation;
+﻿using NetworkUtility.DNS;
+using System.Net.NetworkInformation;
 
 namespace NetworkUtility.Ping;
 
 public class NetworkService
 {
+    private readonly IDNS _dns;
+
+    public NetworkService(IDNS dns)
+    {
+        _dns = dns;
+    }
+
     public string SendPing()
     {
-        return "Success: Ping Sent!";
+        var dnsSucess = _dns.SendDNS();
+
+        if (dnsSucess) return "Success: Ping Sent!";
+
+        return "Failed: Ping not Sent!";
     }
 
     public int PingTimeout(int a, int b)
@@ -26,5 +38,29 @@ public class NetworkService
             DontFragment = true,
             Ttl = 1
         };
+    }
+
+    public IEnumerable<PingOptions> MostRecentPings()
+    {
+        IEnumerable<PingOptions> pingOptions =
+        [
+            new PingOptions()
+            {
+                DontFragment= true,
+                Ttl = 1
+            },
+            new PingOptions()
+            {
+                DontFragment= true,
+                Ttl = 1
+            },
+            new PingOptions()
+            {
+                DontFragment= true,
+                Ttl = 1
+            }
+        ];
+
+        return pingOptions;
     }
 }
